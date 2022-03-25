@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket_form</title>
+    <style>
+        
+        .div {
+    display: inline-block;
+    width: 90%;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+;}
+ 
+@media (min-width: 320x) and (max-width: 480px) 
+{
+.div {width: 90%;}
+}
+/* IPhone 4 - единственный формат,близкий к макету в учебнике*/
+
+@media (min-width: 820px) and (min-width: 1180px)
+{
+.div {width: 90%;}
+}
+/* IPad Air*/
+
+</style>
+</head>
+<body>
+  <form method="post" action="#">
+<div class="div">
+    <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+
+    Название статьи:
+    <input type="text" name="article title" value=""><br>
+
+    Рубрика:
+    <select name="heading">
+    <option  selected value="">программирование</option>
+    </select>
+    <br>
+
+    Публикация:
+    <input type="radio" name="publication" value="1">на сайте 
+    <input type="radio" name="publication" value="2">в журнале 
+    <input type="radio" name="publication" value="3">на сайте и в журнале<br>
+    
+    Разрешить комментарии 
+    <input type="checkbox" name="comments" checked><br>
+        
+    <textarea name="text">Текст статьи:</textarea><br>
+<p></p>
+    <input type="submit" value="Опубликовать">
+</div>
+</form>  
+</body>
+</html>

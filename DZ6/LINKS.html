@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+div {text-decoration: underline;}
+a {color:rgb(27, 148, 27)}
+a:hover {color: red}
+
+
+span {display: inline-block; padding: 15px;}
+span ::after {content: "|"; color: red;}
+span:last-child::after {content: none;}
+
+main  {display: inline; padding: 15px;}
+main {border-right: 3px solid red ;}
+main:last-child {border-right: none;}
+
+    </style>
+</head>
+<body>
+   <div>
+    <div>
+<span><a href="https://ru.wikipedia.org/wiki">Первая ссылка</a></span> 
+<span><a href="https://ru.wikipedia.org/wiki">Вторая ссылка</a></span>
+<span><a href="https://ru.wikipedia.org/wiki">Вторая ссылка</a></span>
+<span><a href="https://ru.wikipedia.org/wiki">Третья ссылка</a></span>
+<span><a href="https://ru.wikipedia.org/wiki">Четвертая ссылка</a></span>
+<span><a href="https://ru.wikipedia.org/wiki">Пятая ссылка</a></span>
+    </div>
+
+<!--чтобы расположить ссылки горизонтально, можно использовать 3 способа:
+1) display: inline;
+2) display: inline-block;
+3) float: left;--
+
+Разделители можно сделать 2 способами:
+1) через border , задав необходимые параметры
+2) через псевдоэлементы :: after / befor при помощи стилевого свойства content.
+Можно задавать не только текст, в качестве генерируемого содержимого, но и ссылки или картинки-->
+
+<div>
+<main><a href="https://ru.wikipedia.org/wiki">Первая ссылка</a></main> 
+<main><a href="https://ru.wikipedia.org/wiki">Вторая ссылка</a></main> 
+<main><a href="https://ru.wikipedia.org/wiki">Третья ссылка</a></main> 
+<main><a href="https://ru.wikipedia.org/wiki">Четвертая ссылка</a></main> 
+<main><a href="https://ru.wikipedia.org/wiki">Пятая ссылка</a></main> 
+</div>
+</div>
+</body>
+</html>
+
